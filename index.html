@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Jefferson Gómez</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="images/Fotos_Jefferson/Logo_sin-letras.webp" alt="Logo">
+        <img class="img-redondo" src="images/Fotos_Jefferson/Logo_sin-letras.webp" alt="Logo">
         <nav>
             <ul>
                 <li><a href="#presentacion">Presentación</a></li>
@@ -20,67 +21,78 @@
     </header>
     <main>
         <section id="presentacion">
-            <p id="mensaje-inicial">Disponible para proyectos y colaboraciones</p>
+             <img class="img-redondo"src="images/Fotos_Jefferson/foto_perfil.webp" alt="foto perfil">
+            <div class="descripcion-perfil">
+              <p>
+            <span class="mensaje-inicial">Disponible para proyectos y colaboraciones</span>
+            </p>
             <h1>Jefferson Gómez Fonseca</h1>
             <p>Estudiante de desarrollo de Software</p>
             <p>Entusiasta del desarrollo de software, la lógica de programación y la creación de experiencias digitales. 
                 Enfocado en el aprendizaje continuo, he trabajado en proyectos que van desde aplicaciones de gestión local 
                 hasta lógica de videojuegos y arquitectura de datos. Destaco por mi pensamiento analítico, atención al detalle 
                 y capacidad para transformar ideas en código funcional.</p>
-                <button>Contáctame &#10145;</button>
-                <img src="images/Fotos_Jefferson/foto_perfil.webp" alt="foto perfil">
+            <button>Contáctame &#10145;</button>  
+            </div>
         </section>
         <section id ="sobre-mi">
-            <h2>Un poco más sobre mí</h2>
-            <h3>Educación</h3>
-            <p>Poseo formación previa en el programa de Bachillerato Internacional (BI), el cual fortaleció mi pensamiento crítico, 
-                la investigación autónoma y habilidades blandas clave como la comunicación efectiva, el trabajo en equipo y la adaptabilidad. 
-                Actualmente, me encuentro cursando el Técnico en Desarrollo de aplicaciones de Software en FUNDATEC, 
-                donde enfoco mi aprendizaje en la lógica de programación, bases de datos y la arquitectura de aplicaciones.</p>
-            <h3>Experiencia</h3>
-            <p>Mi experiencia se basa en realizar prácticas de proyectos independientes. He diseñado e implementado 
-                una aplicación de gestión personal para el control y organización familiar, con el objetivo de automatizar las tareas de mis padres. 
-                Asimismo, he desarrollado videojuegos y proyectos interactivos en Unity, aplicando C# para crear mecánicas sólidas y dinámicas de juego.</p>
-            <h3>Intereses</h3>
-            <p>Me apasiona transformar ideas en soluciones tecnológicas funcionales, combinando la precisión técnica con el análisis lógico. 
-                Me interesa seguir profundizando en el desarrollo de software, la creación de entornos interactivos y el aprendizaje continuo de 
-                nuevas herramientas informáticas, siempre buscando crear proyectos que generen un impacto positivo en mi entorno.</p>
-            <img src="images/Fotos_Jefferson/foto_personal.webp" alt="foto personal">
+            <h2>Un poco sobre mí</h2>
+            <div class="foto-txt-personal">
+                <img src="images/Fotos_Jefferson/foto_personal.webp" alt="foto personal">
+                <div class="descripcion-personal">
+                    <h3>Educación</h3>
+                    <p>Poseo formación previa en el <span class="negrita">programa de Bachillerato Internacional (BI)</span>, el cual fortaleció mi pensamiento crítico, 
+                    la investigación autónoma y habilidades blandas clave como la comunicación efectiva, el trabajo en equipo y la adaptabilidad. 
+                    Actualmente, me encuentro cursando el <span class="negrita">Técnico en Desarrollo de aplicaciones de Software en FUNDATEC</span>, 
+                    donde enfoco mi aprendizaje en la lógica de programación, bases de datos y la arquitectura de aplicaciones.</p>
+                    <h3>Experiencia</h3>
+                    <p>Mi experiencia se basa en realizar prácticas de proyectos independientes. He diseñado e implementado 
+                    una aplicación de gestión personal para el control y organización familiar, con el objetivo de automatizar las tareas de mis padres. 
+                    Asimismo, he desarrollado videojuegos y proyectos interactivos en Unity, aplicando C# para crear mecánicas sólidas y dinámicas de juego.</p>
+                    <h3>Intereses</h3>
+                    <p>Me apasiona transformar ideas en soluciones tecnológicas funcionales, combinando la precisión técnica con el análisis lógico. 
+                    Me interesa seguir profundizando en el desarrollo de software, la creación de entornos interactivos y el aprendizaje continuo de 
+                    nuevas herramientas informáticas, siempre buscando crear proyectos que generen un impacto positivo en mi entorno.</p>
+                </div>
+            </div>        
         </section>
         <section id="habilidades">
             <h2>Herramientas y tecnológias</h2>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/Python.webp" alt="Python">
-                <figcaption>Python</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/Java.webp" alt="Java">
-                <figcaption>Java</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/Csharp.webp" alt="C#">
-                <figcaption>C#</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/GitHub.webp" alt="GitHub">
-                <figcaption>GitHub</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/HTML.webp" alt="HTML">
-                <figcaption>HTML</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/CSS.webp" alt="CSS">
-                <figcaption>CSS</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/JavaScript.webp" alt="JavaScript">
-                <figcaption>Java Script</figcaption>
-            </figure>
-            <figure class="tecnologias">
-                <img src="images/Logos_Tecnologías/SQL.webp" alt="SQL">
-                <figcaption>SQL</figcaption>
-            </figure>
+            <div class="tecnologias">
+                <figure>
+                    <img src="images/Logos_Tecnologías/Python.webp" alt="Python">
+                    <figcaption>Python</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/Java.webp" alt="Java">
+                    <figcaption>Java</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/Csharp.webp" alt="C#">
+                    <figcaption>C#</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/GitHub.webp" alt="GitHub">
+                    <figcaption>GitHub</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/HTML.webp" alt="HTML">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/CSS.webp" alt="CSS">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/JavaScript.webp" alt="JavaScript">
+                    <figcaption>Java Script</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Logos_Tecnologías/SQL.webp" alt="SQL">
+                    <figcaption>SQL</figcaption>
+                </figure>
+        </div>
+            
         </section>
         <section id="proyectos">
             <h2>Algunos proyectos recientes</h2>

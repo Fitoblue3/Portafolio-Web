@@ -1,0 +1,190 @@
+@import url('https://googleapis.com');
+
+h1,h2,h3 {
+    font-family: 'Century Gothic', 'Tw Cen MT', 'Futura', sans-serif;
+    font-weight: bold;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    max-width: 100%;  
+}
+
+/* eliminar margenes de la página*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 20px;
+}
+
+.img-redondo {
+    border-radius: 50%;
+}
+
+header img{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    padding-top: 16px; /*poner más abajo*/
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*Presentación*/
+
+#presentacion {
+    background: linear-gradient(#2563EB, #3B82F6, #60A5FA);
+    padding: 120px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    align-items: center;
+    
+}
+
+#presentacion p, h1 {
+    color: white;
+    max-height: 10%;
+}
+
+#presentacion p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#presentacion h1 {
+    font-size: 3rem;
+}
+
+#presentacion img {
+    flex-shrink: 0; /* Evita que se reduzca*/
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 35%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje-inicial {
+    background-color: rgba(255, 255, 255, 0.189);
+    border-radius: 20px;;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*boton inicial*/
+#presentacion button{
+    background-color: white;
+    color: #111;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+/* efecto boton */
+button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/*Sobre mí*/
+
+#sobre-mi{
+    padding: 40px 20px 70px;
+}
+
+.foto-txt-personal {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2.5em;
+    padding-bottom: 50px;
+}
+
+#sobre-mi img {
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-personal p{
+    text-align: justify;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+
+/*habilidades*/
+#habilidades {
+    background-color: #E5E7EB;
+    padding: 40px 20px 70px;
+}
+
+.tecnologias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+figure {
+    width: 50px;
+    background-color: #FFFFFF;
+    padding: 20px 200px 20px 10px;
+    border-radius: 12px;
+    border-color: #F3F4F6 solid 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figure:hover{
+    transform: scale(1.1); /*efecto zoom*/
+}
+
+figure img {
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+figure figcaption {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1rem;
+    white-space: nowrap
+}
