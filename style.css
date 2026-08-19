@@ -62,23 +62,58 @@ header img{
 
 }
 
+/*Menu Hamburguesa*/
+.menu-toggle {
+    display: block; 
+    background: none;
+    border: none;
+    color: #111827;
+   
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 3%;
+}
+
+.menu-toggle:hover{
+     background-color: transparent;
+}
+.menu-toggle:active{
+    transform: translateY(1px);
+}
+
 nav {
-    padding-right: 5%
+    position: fixed;
+    top: 0;
+    right: -60%; /* Oculto fuera de pantalla por la derecha */
+    width: 50%;  
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2563EB, #3B82F6, #60A5FA); /* Color azul acorde a tu sitio */
+    padding: 80px  3px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.15);
+    z-index: 1001;
+}
+
+nav.active {
+    right: 0;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     gap: 2%;
     white-space: nowrap;
 }
 
 nav a {
-    color: #111827;
-    font-size: clamp(0.5rem, 4vw, 1em);
+    color: #FFFFFF;
+    font-size: clamp(0.8rem, 4vw, 1em);
     font-weight: bold;
     text-decoration: none;
+    display: block;
+    padding: 5% 5%;
 }
 
 nav a:hover {
@@ -275,7 +310,6 @@ article img {
     width: 600px;
     height: 300px;
     max-width: clamp(200px, 20%, 600px);
-    height: auto;
     aspect-ratio: 10 / 10;
     max-width: 100%;
     max-height: 45vh;
@@ -555,6 +589,32 @@ footer a:hover {
 /*Tablet*/
 @media (min-width: 768px) {
 
+    /* Se oculta el botón hamburguesa */
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        padding-right: 5%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    nav a {
+        color: #111827;
+        font-size: clamp(0.5rem, 4vw, 1em);
+    }
+
     .foto-txt-personal {
         display: flex;
         justify-content: space-between;
@@ -591,12 +651,12 @@ footer a:hover {
 
 /*desktop */
 @media (min-width: 1024px) {
-     .foto-txt-personal {
+    .foto-txt-personal {
         display: flex;
         justify-content: space-between;
         gap: 10%;
         align-items: center;
-}
+     }
 
     .foto-txt-personal {
         display: flex;
@@ -629,6 +689,26 @@ footer a:hover {
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+    article img {
+        width: 200px !important;
+        height: auto;
+    }
+
+    .desc-proyecto h3 {
+        font-size: 1.2em !important;
+    }
+
+    .desc-proyecto p{
+        font-size: 0.7em !important;
+    }
+    
+    .logo-git a {
+        font-size: 0.6em;
+}
+    
+}
+
 @media (min-width: 1440px) {
 
     form button {
@@ -636,4 +716,6 @@ footer a:hover {
     }
 }
 
-@media (min-widht: )
+@media (min-widht: 2560px) {
+
+}

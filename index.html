@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Jefferson Gómez</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script> <!--defer: Descarga el JavaScript ahora mismo en segundo plano, pero no lo ejecutes hasta que todo el HTML esté completamente cargado (Mejora la velocidad de la págima)-->
 </head>
 <body>
     <header>
         <img class="img-redondo" src="images/Fotos_Jefferson/Logo_sin-letras.webp" alt="Logo">
-        <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars" id="toggleIcon"></i>
+        </button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#presentacion">Presentación</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
