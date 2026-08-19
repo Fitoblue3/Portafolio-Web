@@ -137,6 +137,10 @@ nav a:hover {
     color: white;
 }
 
+#presentacion p {
+    line-height: 1.5;
+}
+
 .mensaje-inicial {
     background-color: rgba(255, 255, 255, 0.189);
     border-radius: 20px;
@@ -227,7 +231,7 @@ button:hover {
 }
 
 .descripcion-personal p{
-    
+    line-height: 1.5;
     font-size: clamp(1rem, 4vw, 1.5em);
     text-align: justify;
     color: #374151;
