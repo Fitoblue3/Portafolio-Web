@@ -123,7 +123,7 @@ nav a:hover {
 /*Presentación*/
 
 #presentacion {
-    background: linear-gradient(to bottom right, #2563EB, #3B82F6, #60A5FA);
+    background: linear-gradient(to bottom right, #ff5100, #3B82F6, #60A5FA);
     min-height: 50vh;
     padding: 40% 5%;
     display: flex;
