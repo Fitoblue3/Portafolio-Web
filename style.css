@@ -43,7 +43,7 @@ header {
     gap: 5%;
     background-color: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    position: fixed;
+    position: fixed; /*Siempre se queda mientras baja*/
 }
 
 .img-redondo {
@@ -125,7 +125,7 @@ nav a:hover {
 #presentacion {
     background: linear-gradient(to bottom right, #2563EB, #3B82F6, #60A5FA);
     min-height: 50vh;
-    padding: 5% 5%;
+    padding: 40% 5%;
     display: flex;
     justify-content: space-between;
     gap: 10%;
@@ -142,12 +142,12 @@ nav a:hover {
     border-radius: 20px;
     padding: 1% 1%;
     font-weight: bold;
-    font-size: clamp(0.9rem, 4vw, 0.6em);
+    font-size: clamp(0.8rem, 4vw, 0.6em);
 }
 
 #presentacion p {
     text-align: justify;
-    font-size: clamp(1rem, 2vw, 2em);
+    font-size: clamp(0.8rem, 2vw, 2em);
 }
 
 #presentacion h1 {
@@ -360,7 +360,7 @@ article img {
     border: 1px solid #BCBEC2;
     border-radius: 18px;
     padding: 10px 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* efecto levantar boton*/
@@ -614,6 +614,10 @@ footer a:hover {
         font-size: clamp(0.5rem, 4vw, 1em);
     }
 
+    #presentacion {
+        padding: 15% 5%;
+    }
+
     .foto-txt-personal {
         display: flex;
         justify-content: space-between;
@@ -692,6 +696,10 @@ footer a:hover {
     article img {
         width: 200px !important;
         height: auto;
+    }
+
+    .logo-git {
+    margin-top: 10px;
     }
 
     .desc-proyecto h3 {
